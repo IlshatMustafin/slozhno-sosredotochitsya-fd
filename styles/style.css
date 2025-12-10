@@ -1,16 +1,13 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
   font-family: 'IBM Plex mono', 'Courier New', monospace;
   background-image: var(--bg-image);
-  background-size: 100vw 100vh;
   background-color: var(--bg-color);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-
 }
 
 .header {
@@ -70,10 +67,10 @@
 .header__theme-menu {
   justify-self: flex-end;
   margin-block-start: clamp(61px, -40.15px + 26.97vw, 167px);
+  font-size: 18px;
 }
 
 .header__theme-menu-list {
-  font-size: 18px;
   font-weight: 400;
   display: grid;
   gap: 10px;
@@ -100,8 +97,39 @@
 .title-decor {
   align-self: flex-end;
   height: fit-content;
-  font-size: 18px;
   font-weight: 700;
   color: var(--title-color);
   background-color: var(--menu-color);
+}
+
+.main {
+  margin: 40px 0;
+  padding: clamp(10px, 0.46px + 2.54vw, 20px);
+}
+
+.pictures {
+  display: grid;
+  gap: 10px;
+}
+
+.pictures__item-image {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.footer {
+  display: grid;
+  place-items: center;
+  position: relative;
+  height: max(100vh, 668px);
+  padding: clamp(10px, 0.46px + 2.54vw, 20px);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-weight: 700;
+  text-shadow: 1px 1px 0 var(--accent-color);
+  color: var(--menu-color);
+  
 }
