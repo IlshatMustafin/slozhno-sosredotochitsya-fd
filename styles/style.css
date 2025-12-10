@@ -2,4 +2,106 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  font-family: 'IBM Plex mono', 'Courier New', monospace;
+  background-image: var(--bg-image);
+  background-size: 100vw 100vh;
+  background-color: var(--bg-color);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+
+.header {
+  position: relative;
+  display: grid;
+  grid-template-rows: min-content max-content;
+  height: max(100vh, 668px);
+  padding: clamp(10px, 0.46px + 2.54vw, 20px);
+  color: var(--menu-color);
+}
+
+.decorated-zone::before {
+  content: '';
+  position: absolute;
+  top: clamp(10px, 0.46px + 2.54vw, 20px);
+  right: clamp(10px, 0.46px + 2.54vw, 20px);
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid currentColor;
+  border-right: 1px solid currentColor;
+}
+
+.decorated-zone::after {
+  content: '';
+  position: absolute;
+  bottom: clamp(10px, 0.46px + 2.54vw, 20px);
+  left: clamp(10px, 0.46px + 2.54vw, 20px);
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid currentColor;
+  border-left: 1px solid currentColor;
+}
+
+.header__decoration-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: clamp(10px, 0.46px + 2.54vw, 20px);
+  right: clamp(19px, 9.46px + 2.54vw, 29px);
+  width: 52px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.header__decoration-label::after {
+  content: '';
+  width: 9px;
+  height: 9px;
+  background-color: currentColor;
+  border-radius: 50%;
+  box-shadow: 0 0 4px 2px currentColor;
+  
+}
+
+.header__theme-menu {
+  justify-self: flex-end;
+  margin-block-start: clamp(61px, -40.15px + 26.97vw, 167px);
+}
+
+.header__theme-menu-list {
+  font-size: 18px;
+  font-weight: 400;
+  display: grid;
+  gap: 10px;
+}
+
+.header__theme-menu-button {
+  text-transform: lowercase;
+  width: 70px;
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+
+.header__title {
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 0.82;
+  text-shadow: 4px 4px 0 var(--accent-color);
+  margin-block-start: clamp(69px, -38.05px + 27.48vw, 177px);
+}
+
+.header__sub-title {
+  margin-block-start: clamp(54px, -48.10px + 27.23vw, 161px);
+}
+
+.title-decor {
+  align-self: flex-end;
+  height: fit-content;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--title-color);
+  background-color: var(--menu-color);
 }
