@@ -1,6 +1,7 @@
 :root.theme-light {
   --bg-image: url('../images/cover-image-light.png');
   --bg-color: #ffeef6;
+  --cropping-color-rgb: 53, 52, 48;
   --cropping-color: #353430;
   --label-color: transparent;
   --accent-color: #ff8dcb;
@@ -13,6 +14,7 @@
   :root {
       --bg-image: url('../images/cover-image-light.png');
       --bg-color: #ffeef6;
+      --cropping-color-rgb: 53, 52, 48;
       --cropping-color: #353430;
       --label-color: transparent;
       --accent-color: #ff8dcb;

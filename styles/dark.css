@@ -1,6 +1,7 @@
 :root.theme-dark {
   --bg-image: url('../images/cover-image-dark.png');
   --bg-color: #000533;
+  --cropping-color-rgb: 255, 0, 112;
   --cropping-color: #ff0070;
   --label-color: #ff0070;
   --accent-color: #ff0070;
@@ -13,6 +14,7 @@
   :root {
     --bg-image: url('../images/cover-image-dark.png');
     --bg-color: #000533;
+    --cropping-color-rgb: 255, 0, 112;
     --cropping-color: #ff0070;
     --label-color: #ff0070;
     --accent-color: #ff0070;
